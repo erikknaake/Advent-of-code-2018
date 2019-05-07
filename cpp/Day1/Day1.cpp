@@ -40,5 +40,5 @@ int main()
 		sum += std::stoi(line);
 	}
 	std::cout << sum << std::endl;
-	getchar(); // for pausing the program
+	char end = getchar(); // for pausing the program
 }
