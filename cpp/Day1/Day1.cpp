@@ -35,7 +35,7 @@ int main()
 	std::fstream file("input.txt");
 	std::string line;
 	int sum = 0;
-	while (std::getline(file, line)) 
+	while (file.is_open() && std::getline(file, line)) 
 	{
 		sum += std::stoi(line);
 	}

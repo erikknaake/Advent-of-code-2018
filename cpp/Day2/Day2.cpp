@@ -42,7 +42,7 @@ int main()
 	std::fstream file("input.txt");
 	std::string line;
 	int numberOfTwoOccurrences = 0, numberOfThreeOccurrences = 0;
-	while (getline(file, line))
+	while (file.is_open() && getline(file, line))
 	{
 		bool countedTwo = false, countedThree = false;
 		for (unsigned int i = 0; i < line.size(); i++) 
