@@ -4,11 +4,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <algorithm>
 
 bool areOpositePools(char a, char b)
 {
-	return a == (b + 32) || a == (b - 32);
+	return a == (b + 32) || a == (b - 32); // Uppercase and lowercase characters are 32 apart in ASCII
 }
 
 int main()
@@ -17,8 +16,8 @@ int main()
 	std::string line;
 	std::getline(file, line);
 	file.close();
-	int i = 0;
 
+	int i = 0;
 	while (i < line.length() - 1)
 	{
 		if (areOpositePools(line.at(i), line.at(i + 1)))
