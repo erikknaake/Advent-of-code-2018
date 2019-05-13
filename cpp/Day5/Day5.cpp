@@ -30,5 +30,5 @@ int main()
 		else
 			i++;
 	}
-	std::cout << line << std::endl;
+	std::cout << line.size() << std::endl;
 }
